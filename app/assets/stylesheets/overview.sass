@@ -1,0 +1,52 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+@import "layouts/footer"
+
+body
+  font-family: Gotham-Narrow-Book
+
+.navbar-default
+  background-color: transparent
+  padding-top: 10px
+  .navbar-nav .open > a:focus
+    background-color: transparent
+  .navbar-toggle
+    border: none
+    &:hover
+      background-color: #9b040c
+    &:focus
+      background-color: #9b040c
+    .icon-bar 
+      background-color: #222
+
+.navbar-brand
+  #navbar-link
+    font-size: 20px
+    text-decoration: none
+
+#navbar-link
+  color: #222
+  font-size: 16px
+  &:hover
+    color: #6ec7b9
+
+.dropdown-menu
+  #navbar-link
+    font-size: 14px
+    &:hover
+      background-color: #6ec7b9
+      color: #222
+
+.dropdown
+  &:hover > .dropdown-menu
+    display: block
+    margin-top: 0
+  .dropdown-toggle
+    font-size: 16px
+
+.nav > li > a
+  &:hover
+    
+    background-color: transparent
+  &:focus
+    
+    background-color: transparent
