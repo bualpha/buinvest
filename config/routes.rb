@@ -1,12 +1,15 @@
 BufcApp::Application.routes.draw do
   root :to => "main#index"
 
+  get "/overview" => "main#overview"
+
   resources :main do
     collection do
       get :index
       post :sign_up_for_newsletter
     end
   end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

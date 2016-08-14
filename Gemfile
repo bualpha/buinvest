@@ -3,14 +3,23 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'rails', :git => "https://github.com/rails/rails", :branch => "3-2-stable"
+gem 'rails', :git => 'https://github.com/rails/rails', :branch => '3-2-stable'
 
+group :development do
+  gem 'sqlite3'
+end
+
+gem 'pg'
 gem 'activesupport', '~> 3.2.22.2'
 
+# Gems for styling
 gem 'sass-rails',   '~> 3.2.3'
 gem 'coffee-rails', '~> 3.2.1'
-gem "haml-rails", "~> 0.4.0"
-gem "bootstrap-sass", '~> 3.1.1'
+gem 'haml-rails', '~> 0.4.0'
+gem 'bootstrap-sass', '~> 3.1.1'
+gem 'font-awesome-rails', '~> 4.6'
+
+gem 'mailchimp-api'
 
 # Gems used only for assets and not required
 # in production environments by default.

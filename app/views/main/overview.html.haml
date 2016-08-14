@@ -1,0 +1,34 @@
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title= "BU Finance & Investment Club"
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %nav.navbar-default
+      .container-fluid
+        .navbar-header
+          %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          .navbar-brand="BU Finance & Investment Club"
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{:href => "#", :id => "navbar-link"} Who We Are
+            %li
+              %a{:href => "#", :id => "navbar-link"} What We Do
+            %ul.nav.navbar-nav
+              %li.dropdown
+                %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button", :id => "navbar-link"}
+                  Student Resources
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#", :id => "navbar-link"} Investment Management
+                  %li
+                    %a{:href => "#", :id => "navbar-link"} Investment Resources
+                  %li
+                    %a{:href => "#", :id => "navbar-link"} Financial Analysis

@@ -1,7 +1,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title BU Finance & Investment Club
+    %title= "BU Finance & Investment Club"
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -20,12 +20,12 @@
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
             %li
-              %a{:href => "#", :id => "navbar-link"} Who We Are
+              %a{:href => "/overview", :id => "navbar-link"} Who We Are
             %li
               %a{:href => "#", :id => "navbar-link"} What We Do
             %ul.nav.navbar-nav
               %li.dropdown
-                %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button", :style => "color: #FFF; font-family: Gotham-Narrow-Book;"}
+                %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button", :id => "navbar-link"}
                   Student Resources
                 %ul.dropdown-menu
                   %li
@@ -102,7 +102,7 @@
             %ul.footer-list
               %li.active="About"
               %li
-                %a{:href => "#"} Overview
+                %a{:href => "/overview"} Overview
               %li
                 %a{:href => "#"} Leadership
               %li
@@ -120,7 +120,7 @@
 
           .col-md-4
             %ul.footer-list
-              %li.active="Contact"
+              %li.active="Contact Us"
               %li
                 %a{:href => "mailto:buinvest@bu.edu"} buinvest@bu.edu
 
@@ -139,9 +139,9 @@
             %ul.footer-list
               %li.active="Social"
               %li
-                %a{:href => "#"} Facebook
+                %a{:href => "", :target => "_blank"} Facebook
               %li
-                %a{:href => "#"} LinkedIn
+                %a{:href => "https://www.linkedin.com/groups/8265670/profile", :target => "_blank"} LinkedIn
 
           .col-md-4
             %div="© 2016 BU Finance and Investment Club"

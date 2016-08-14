@@ -17,3 +17,5 @@
 # Ignore git files
 .git
 
+# Ignore OS X files
+.DS_Store
