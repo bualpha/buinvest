@@ -1,9 +1,149 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title BufcApp
+    %title BU Finance & Investment Club
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    %div="Hello, World!"
+    %nav.navbar-default
+      .container-fluid
+        / Brand and toggle get grouped for better mobile display
+        .navbar-header
+          %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          .navbar-brand="BU Finance & Investment Club"
+        / Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{:href => "#", :id => "navbar-link"} Who We Are
+            %li
+              %a{:href => "#", :id => "navbar-link"} What We Do
+            %ul.nav.navbar-nav
+              %li.dropdown
+                %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button", :style => "color: #FFF; font-family: Gotham-Narrow-Book;"}
+                  Student Resources
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#", :id => "navbar-link"} Investment Management
+                  %li
+                    %a{:href => "#", :id => "navbar-link"} Investment Resources
+                  %li
+                    %a{:href => "#", :id => "navbar-link"} Financial Analysis
+
+    .jumbotron
+      .header-container
+        %div.col-md-6.col-xs-12
+          %div
+        %div.col-md-6.col-xs-12.text-center
+          .row
+            .tagline= "Aim for Excellence. Expand your Horizons. Launch your Career."
+          .row
+            .provide="We provide a hands-on, practical learning platform for all BU students interested in accelerating their understanding of finance, by running a student-managed investment fund and research team."
+
+    .container
+      .row.text-center.arrow
+        %i.fa.fa-arrow-down.fa-2x{"aria-hidden" => "true"}
+
+    .container
+      .row.text-center
+        %h3="Upcoming Events"
+      .row.text-center.events
+        %div.col-md-4
+          %div.box-header="Event 1"
+
+        %div.col-md-4
+          %div.box-header="Event 2"
+
+        %div.col-md-4
+          %div.box-header="Event 3"
+
+    .container
+      .row.text-center.highlights
+        %hr
+        %div.col-md-4
+          %i.fa.fa-bar-chart.fa-4x{"aria-hidden" => "true"}
+          .row.icons
+            %span= "Funding"
+          .row.descs
+            %span="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."
+
+        %div.col-md-4
+          %i.fa.fa-folder-open.fa-4x{"aria-hidden" => "true"}
+          .row.icons
+            %span= "Portfolio"
+          .row.descs
+            %span="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."
+
+        %div.col-md-4
+          %i.fa.fa-group.fa-4x{"aria-hidden" => "true"}
+          .row.icons
+            %span= "Student Positions"
+          .row.descs
+            %span="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."
+
+    %section.newsletter
+      .container
+        .row.newsletter-row
+          .col-md-8="Interested in joining BUFC? Sign up for our newsletter"
+          .col-md-4
+            %form#newsletter-signup-form
+              .form-group
+                %input.form-control{:name => "email", :id => "email", :type => "email", :placeholder => "Email"}
+    
+    %section.footer
+      .container
+        .row.footer-row
+          .col-md-2
+            %ul.footer-list
+              %li.active="About"
+              %li
+                %a{:href => "#"} Overview
+              %li
+                %a{:href => "#"} Leadership
+              %li
+                %a{:href => "#"} Advisors 
+              %li
+                %a{:href => "#"} Student Positions
+
+          .col-md-6
+            %ul.footer-list
+              %li.active="Portfolio"
+              %li
+                %a{:href => "#"} Fund Allocation & Composition
+              %li
+                %a{:href => "#"} Research & Ethics Policy
+
+          .col-md-4
+            %ul.footer-list
+              %li.active="Contact"
+              %li
+                %a{:href => "mailto:buinvest@bu.edu"} buinvest@bu.edu
+
+        .row.footer-row
+          .col-md-2
+            %ul.footer-list
+              %li.active="Student Resources"
+              %li
+                %a{:href => "#"} Investment Management
+              %li
+                %a{:href => "#"} Investment Resources
+              %li
+                %a{:href => "#"} Financial Analysis
+
+          .col-md-6
+            %ul.footer-list
+              %li.active="Social"
+              %li
+                %a{:href => "#"} Facebook
+              %li
+                %a{:href => "#"} LinkedIn
+
+          .col-md-4
+            %div="© 2016 BU Finance and Investment Club"
+
+

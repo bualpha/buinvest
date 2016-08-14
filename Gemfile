@@ -1,16 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.22.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'rails', :git => "https://github.com/rails/rails", :branch => "3-2-stable"
 
-gem 'activesupport', :git => "https://github.com/rails/rails", :branch => "3-2-stable"
+gem 'activesupport', '~> 3.2.22.2'
 
 gem 'sass-rails',   '~> 3.2.3'
 gem 'coffee-rails', '~> 3.2.1'
 gem "haml-rails", "~> 0.4.0"
+gem "bootstrap-sass", '~> 3.1.1'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
