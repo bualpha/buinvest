@@ -5,6 +5,8 @@ application.js: application.js
 application/index.js: application.js
 application.css: application.css
 application/index.css: application.css
+application_new.css: application_new.css
+application_new/index.css: application_new.css
 fontawesome/fonts/FontAwesome.otf: fontawesome/fonts/FontAwesome.otf
 fontawesome/fonts/FontAwesome/index.otf: fontawesome/fonts/FontAwesome.otf
 fontawesome/fonts/fontawesome-webfont.eot: fontawesome/fonts/fontawesome-webfont.eot
