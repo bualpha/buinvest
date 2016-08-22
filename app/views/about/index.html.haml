@@ -5,6 +5,7 @@
     = stylesheet_link_tag    "application_new", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
+    = favicon_link_tag "favicon.ico"
   %body
     %nav.navbar-default
       .container-fluid
@@ -52,7 +53,13 @@
           %h3="Overview"
           %hr
         .row
-          %div="Boston University Finance and Investment Club (“BUFC”) is an interactive, team-oriented experience focused on mentoring and guiding its members from their first year of college to their first year on the job. BUFC challenges its members to ask the right questions when analyzing an industry such as “how are these companies able to maintain a profit” or “what makes them successful.” Incoming Freshmen and seasoned Seniors from any major in Boston University are able to meaningfully contribute side-by-side to BUFC’s live fund through guided investment research and management. BUFC provides countless networking opportunities for its members to meet Boston University alumni from the recent graduates to the senior executives. Events include The Annual Wall Street Trip, company site visits, speaker series, and the Your Future in Finance Conference. General Meetings are held at 6:00pm every Wednesday. For additional information, or to sign up on the mailing list, please contact buinvest@bu.edu."
+          %div="Boston University Finance and Investment Club (“BUFC”) is an interactive, team-oriented experience focused on mentoring and guiding its members from their first year of college to their first year on the job. BUFC challenges its members to ask the right questions when analyzing an industry such as “how are these companies able to maintain a profit” or “what makes them successful.”"
+          %br
+          %div="Incoming Freshmen and seasoned Seniors from any major in Boston University are able to meaningfully contribute side-by-side to BUFC’s live fund through guided investment research and management. BUFC provides countless networking opportunities for its members to meet Boston University alumni from the recent graduates to the senior executives."
+          %br
+          %span="Events include The Annual Wall Street Trip, company site visits, speaker series, and the Your Future in Finance Conference. General Meetings are held at 6:00pm every Wednesday. For additional information, or to sign up on the mailing list, please contact" 
+          %span
+            %a{:href => "mailto:buinvest@bu.edu"}= "buinvest@bu.edu"
 
     %section#leadership-bufc
       .container
@@ -65,29 +72,29 @@
               %a
                 %img{:src => ""}
             %div
-              %strong="Name"
-            %span="Position"
+              %strong="Mike Minarczyk"
+            %span="President"
           .col-md-3.text-center.eboard
             .thumbnail
               %a
                 %img{:src => ""}
             %div
-              %strong="Name"
-            %span="Position"
+              %strong="Stephanie Conyack"
+            %span="VP, Corporate Relations"
           .col-md-3.text-center.eboard
             .thumbnail
               %a
                 %img{:src => ""}
             %div
-              %strong="Name"
-            %span="Position"
+              %strong="Andrew Keuler"
+            %span="VP, Investment Management"
           .col-md-3.text-center.eboard
             .thumbnail
               %a
                 %img{:src => ""}
             %div
-              %strong="Name"
-            %span="Position"
+              %strong="David Elgawly"
+            %span="Chief Risk Office"
 
         .row
           .col-md-3.text-center.eboard
@@ -95,29 +102,37 @@
               %a
                 %img{:src => ""}
             %div
-              %strong="Name"
-            %span="Position"
+              %strong="Majid Mowlood"
+            %span="Chief Risk Analyst"
           .col-md-3.text-center.eboard
             .thumbnail
               %a
                 %img{:src => ""}
             %div
-              %strong="Name"
-            %span="Position"
+              %strong="Saania Malik"
+            %span="VP, Investment Research"
           .col-md-3.text-center.eboard
             .thumbnail
               %a
                 %img{:src => ""}
             %div
-              %strong="Name"
-            %span="Position"
+              %strong="Matt Leung"
+            %span="VP, Investment Research"
           .col-md-3.text-center.eboard
             .thumbnail
               %a
                 %img{:src => ""}
             %div
-              %strong="Name"
-            %span="Position"
+              %strong="Jake Strzalkowski"
+            %span="VP, Operations"
+        .row
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Freddie Vargus"
+            %span="VP, Technology & Quant Innovation"
 
     %section#advisors
       .container
@@ -130,26 +145,27 @@
               %a
                 %img{:src => ""}
             %div
-              %strong="Name"
-            %span="Role"
+              %strong="Steven Segal"
+            %span="Faculty Advisor"
+          .col-md-9
+            %div="Steven Segal is an Executive-in-Residence/Lecturer at Boston University’s School of Management where he developed, and now teaches, a graduate level course in private equity and leverage buyouts. Mr. Segal is also a Special Limited Partner of J.W. Childs Associates, where he helps guide the strategic direction of several of the firm’s portfolio companies through his role as a director, and also co-invests with the firm, which he co-founded in 1995. Mr. Segal brings 20 years of private equity investment experience and applied finance to the club."
+        .row
           .col-md-3.text-center.eboard
             .thumbnail
               %a
                 %img{:src => ""}
             %div
-              %strong="Name"
-            %span="Role"
+              %strong="Mark Williams"
+            %span="Technical Advisor"
+          .col-md-9
+            %div="Mark has been on the Finance & Economics Faculty at BU since 2002 and currently serves as Executive-in-Residence / Master Lecturer of Finance. Prior to teaching he worked as a senior trading floor executive, a bank trust officer and a bank examiner to the Federal Reserve. He is an expert in the field of risk management and serves as a crucial resource for the Club in targeting effective portfolio risk management."
+        .row
           .col-md-3.text-center.eboard
             .thumbnail
               %a
                 %img{:src => ""}
             %div
-              %strong="Name"
-            %span="Role"
-          .col-md-3.text-center.eboard
-            .thumbnail
-              %a
-                %img{:src => ""}
-            %div
-              %strong="Name"
-            %span="Role"
+              %strong="David Spieler"
+            %span="Technical Advisor"
+          .col-md-9
+            %div="David is a former Managing Director for Duff & Phelps in the Valuation Advisory services practice and former partner at PricewaterhouseCoopers. He currently teaches a wide-range of both undergraduate and graduate level finance courses at the School of Management. He serves as an advisor to business valuation; particularly in the technology, info-comm and entertainment industries."

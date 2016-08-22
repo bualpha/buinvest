@@ -7944,6 +7944,15 @@ button.close {
     text-align: center;
   }
 }
+/* line 25, ../../app/assets/stylesheets/layouts/_footer.sass */
+.footer-logo {
+  width: 100%;
+  height: 100px;
+  background-image: url("bufclogo.jpg");
+  background-size: cover;
+  margin-left: -16px;
+}
+
 /* line 4, ../../app/assets/stylesheets/main.sass */
 body {
   font-family: Gotham-Narrow-Book;
@@ -7989,121 +7998,129 @@ body {
   text-decoration: none;
 }
 
-/* line 31, ../../app/assets/stylesheets/main.sass */
+/* line 30, ../../app/assets/stylesheets/main.sass */
+.bufclogo {
+  width: 100%;
+  height: 150px;
+  background-image: url("bufclogo.jpg");
+  background-size: cover;
+}
+
+/* line 36, ../../app/assets/stylesheets/main.sass */
 #navbar-link {
   color: #fff;
   font-size: 16px;
 }
-/* line 34, ../../app/assets/stylesheets/main.sass */
+/* line 39, ../../app/assets/stylesheets/main.sass */
 #navbar-link:hover {
   color: #6ec7b9;
 }
 
-/* line 38, ../../app/assets/stylesheets/main.sass */
+/* line 43, ../../app/assets/stylesheets/main.sass */
 .dropdown-menu #navbar-link {
   color: #222;
   font-size: 14px;
 }
-/* line 41, ../../app/assets/stylesheets/main.sass */
+/* line 46, ../../app/assets/stylesheets/main.sass */
 .dropdown-menu #navbar-link:hover {
   background-color: #6ec7b9;
 }
 
-/* line 45, ../../app/assets/stylesheets/main.sass */
+/* line 50, ../../app/assets/stylesheets/main.sass */
 .dropdown:hover > .dropdown-menu {
   display: block;
   margin-top: 0;
 }
-/* line 48, ../../app/assets/stylesheets/main.sass */
+/* line 53, ../../app/assets/stylesheets/main.sass */
 .dropdown .dropdown-toggle {
   font-size: 16px;
 }
 
-/* line 52, ../../app/assets/stylesheets/main.sass */
+/* line 57, ../../app/assets/stylesheets/main.sass */
 .nav > li > a:hover {
   color: #222;
   background-color: transparent;
 }
-/* line 55, ../../app/assets/stylesheets/main.sass */
+/* line 60, ../../app/assets/stylesheets/main.sass */
 .nav > li > a:focus {
   color: #222;
   background-color: transparent;
 }
 
-/* line 59, ../../app/assets/stylesheets/main.sass */
+/* line 64, ../../app/assets/stylesheets/main.sass */
 .jumbotron {
   background-color: #9b040c;
   height: 580px;
 }
 
-/* line 63, ../../app/assets/stylesheets/main.sass */
+/* line 68, ../../app/assets/stylesheets/main.sass */
 .header-container {
   padding-top: 80px;
 }
 
-/* line 66, ../../app/assets/stylesheets/main.sass */
+/* line 71, ../../app/assets/stylesheets/main.sass */
 .tagline {
   font-size: 30px;
   color: #fff;
   margin-bottom: 20px;
 }
 
-/* line 71, ../../app/assets/stylesheets/main.sass */
+/* line 76, ../../app/assets/stylesheets/main.sass */
 .provide {
   font-size: 16px;
   color: #fff;
 }
 
-/* line 75, ../../app/assets/stylesheets/main.sass */
+/* line 80, ../../app/assets/stylesheets/main.sass */
 .arrow {
   margin-bottom: 50px;
 }
 
-/* line 78, ../../app/assets/stylesheets/main.sass */
+/* line 83, ../../app/assets/stylesheets/main.sass */
 .events {
   margin-bottom: 80px;
 }
 
-/* line 81, ../../app/assets/stylesheets/main.sass */
+/* line 86, ../../app/assets/stylesheets/main.sass */
 .highlights {
   margin-bottom: 80px;
 }
 
-/* line 85, ../../app/assets/stylesheets/main.sass */
+/* line 90, ../../app/assets/stylesheets/main.sass */
 .row .icons {
   margin-top: 10px;
   margin-bottom: 10px;
   style: bold;
 }
-/* line 89, ../../app/assets/stylesheets/main.sass */
+/* line 94, ../../app/assets/stylesheets/main.sass */
 .row .descs {
   margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 94, ../../app/assets/stylesheets/main.sass */
+/* line 99, ../../app/assets/stylesheets/main.sass */
 .newsletter {
   background-color: #6ec7b9;
   font-size: 24px;
 }
 
-/* line 98, ../../app/assets/stylesheets/main.sass */
+/* line 103, ../../app/assets/stylesheets/main.sass */
 .newsletter-row {
   padding-top: 25px;
 }
-/* line 100, ../../app/assets/stylesheets/main.sass */
+/* line 105, ../../app/assets/stylesheets/main.sass */
 .newsletter-row .col-md-8 {
   margin-bottom: 10px;
 }
 @media (max-width: 992px) {
-  /* line 100, ../../app/assets/stylesheets/main.sass */
+  /* line 105, ../../app/assets/stylesheets/main.sass */
   .newsletter-row .col-md-8 {
     text-align: center;
   }
 }
 
-/* line 105, ../../app/assets/stylesheets/main.sass */
+/* line 110, ../../app/assets/stylesheets/main.sass */
 .box-header {
   background-color: #999999;
   width: 100%;

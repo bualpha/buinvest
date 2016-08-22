@@ -7940,6 +7940,15 @@ button.close {
     text-align: center;
   }
 }
+/* line 25, ../../app/assets/stylesheets/layouts/_footer.sass */
+.footer-logo {
+  width: 100%;
+  height: 100px;
+  background-image: url("bufclogo.jpg");
+  background-size: cover;
+  margin-left: -16px;
+}
+
 /* line 4, ../../app/assets/stylesheets/about.sass */
 body {
   font-family: Gotham-Narrow-Book;
