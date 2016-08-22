@@ -2,7 +2,7 @@ BufcApp::Application.routes.draw do
   root :to => "main#index"
 
   get "/home" => "main#index"
-  get "/overview" => "overview#index"
+  get "/about" => "about#index"
 
   resources :main do
     collection do
@@ -10,7 +10,7 @@ BufcApp::Application.routes.draw do
     end
   end
 
-  resources :overview do
+  resources :about do
     collection do
     end
   end

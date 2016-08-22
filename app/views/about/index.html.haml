@@ -1,0 +1,155 @@
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title= "BU Finance & Investment Club"
+    = stylesheet_link_tag    "application_new", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %nav.navbar-default
+      .container-fluid
+        .navbar-header
+          %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          .navbar-brand
+            %a{:href => "/home", :id => "navbar-link"}="BU Finance & Investment Club"
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{:href => "/about", :id => "navbar-link"} Who We Are
+            %li
+              %a{:href => "#", :id => "navbar-link"} What We Do
+            %ul.nav.navbar-nav
+              %li.dropdown
+                %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button", :id => "navbar-link"}
+                  Student Resources
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#", :id => "navbar-link"} Investment Management
+                  %li
+                    %a{:href => "#", :id => "navbar-link"} Investment Resources
+                  %li
+                    %a{:href => "#", :id => "navbar-link"} Financial Analysis
+    %hr
+
+    %section#letter-from-president
+      .container
+        .row
+          %h3="Letter from the President"
+          %hr
+        .row
+          %div="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."
+          %br
+          %div="Sincerely,"
+          %span="Mr. President"
+   
+    %section#overview-bufc
+      .container
+        .row
+          %h3="Overview"
+          %hr
+        .row
+          %div="Boston University Finance and Investment Club (“BUFC”) is an interactive, team-oriented experience focused on mentoring and guiding its members from their first year of college to their first year on the job. BUFC challenges its members to ask the right questions when analyzing an industry such as “how are these companies able to maintain a profit” or “what makes them successful.” Incoming Freshmen and seasoned Seniors from any major in Boston University are able to meaningfully contribute side-by-side to BUFC’s live fund through guided investment research and management. BUFC provides countless networking opportunities for its members to meet Boston University alumni from the recent graduates to the senior executives. Events include The Annual Wall Street Trip, company site visits, speaker series, and the Your Future in Finance Conference. General Meetings are held at 6:00pm every Wednesday. For additional information, or to sign up on the mailing list, please contact buinvest@bu.edu."
+
+    %section#leadership-bufc
+      .container
+        .row
+          %h3="Leadership"
+          %hr
+        .row
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Position"
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Position"
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Position"
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Position"
+
+        .row
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Position"
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Position"
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Position"
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Position"
+
+    %section#advisors
+      .container
+        .row
+          %h3="Advisors"
+          %hr
+        .row
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Role"
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Role"
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Role"
+          .col-md-3.text-center.eboard
+            .thumbnail
+              %a
+                %img{:src => ""}
+            %div
+              %strong="Name"
+            %span="Role"
