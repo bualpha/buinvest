@@ -25,18 +25,26 @@
               %a{:href => "/fund", :id => "navbar-link"} What We Do
             %ul.nav.navbar-nav
               %li.dropdown
-                %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button", :id => "navbar-link"}
+                %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "/resources", :role => "button", :id => "navbar-link"}
                   Student Resources
                 %ul.dropdown-menu
                   %li
-                    %a{:href => "#", :id => "navbar-link"} Investment Management
+                    %a{:href => "/resources#investment-management", :id => "navbar-link"} Investment Management
                   %li
-                    %a{:href => "#", :id => "navbar-link"} Investment Research
+                    %a{:href => "#investment-resources", :id => "navbar-link"} Investment Research
                   %li
-                    %a{:href => "#", :id => "navbar-link"} Financial Analysis
+                    %a{:href => "#financial-analysis", :id => "navbar-link"} Financial Analysis
     %hr
 
     %section
+      .container
+        .row
+          %h3="Section"
+          %hr
+        .row
+          %div="This is where you can find presentations, reading material, websites, and other resources pertaining to BUFC and investing."
+
+    %section#investment-management
       .container
         .row
           %h3="Section One"
@@ -44,15 +52,29 @@
         .row
           %div="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."
    
-    %section
+    %section#investment-research
       .container
         .row
           %h3="Section Two"
           %hr
         .row
           %div="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."
+          %br
+          %table.table.table-striped
+            %thead
+              %tr
+                %th="Column 1"
+                %th="Column 2"
+                %th="Column 3"
+            %tbody
+              %tr
+                %td="Stuff"
+              %tr
+                %td="Stuff"
+              %tr
+                %td="Stuff"
 
-    %section
+    %section#financial-analysis
       .container
         .row
           %h3="Section Three"

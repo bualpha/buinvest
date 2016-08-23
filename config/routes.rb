@@ -4,6 +4,7 @@ BufcApp::Application.routes.draw do
   get "/home" => "main#index"
   get "/about" => "about#index"
   get "/fund" => "portfolio#index"
+  get "/resources" => "resources#index"
 
   resources :main do
     collection do
