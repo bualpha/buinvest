@@ -3,6 +3,8 @@ Gotham-Narrow-Book.otf: Gotham-Narrow-Book.otf
 Gotham-Narrow-Book/index.otf: Gotham-Narrow-Book.otf
 bufclogo.jpg: bufclogo.jpg
 bufclogo/index.jpg: bufclogo.jpg
+bufcsquarelogo.png: bufcsquarelogo.png
+bufcsquarelogo/index.png: bufcsquarelogo.png
 favicon.ico: favicon.ico
 favicon/index.ico: favicon.ico
 application.js: application.js
