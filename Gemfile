@@ -19,7 +19,9 @@ gem 'haml-rails', '~> 0.4.0'
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'font-awesome-rails', '~> 4.6'
 
-gem 'mailchimp-api'
+gem 'gibbon'
+gem 'byebug', '~> 9.0.5'
+gem 'figaro'
 
 # Gems used only for assets and not required
 # in production environments by default.

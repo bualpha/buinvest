@@ -5,6 +5,9 @@ BufcApp::Application.routes.draw do
   get "/about" => "about#index"
   get "/fund" => "portfolio#index"
   get "/resources" => "resources#index"
+  get "/EthicsStatement91115.pdf" => "portfolio#ethics"
+  get "/BUFCSecuritySelectionProcess.pdf" => "portfolio#security_selection"
+
 
   resources :main do
     collection do
