@@ -42,9 +42,12 @@
           %h3="Investment Management"
           %hr
         .row
-          %span="We're working on adding resources to this section. Have a suggestion? Email us at "
-          %span
-            %a{:href => "mailto:buinvest@bu.edu"} buinvest@bu.edu
+          %table.table.table-striped
+            %tbody
+            - @resources.each do |resource|
+              %tr
+                %td
+                  %a{:href => "#{resource[1]}"} #{resource[0]}
 
     %section#investment-research
       .container
@@ -64,76 +67,12 @@
                 %th="Senior Analyst(s)"
                 %th="Presentation (.pdf)"
             %tbody
-              %tr
-                %td="Real Estate"
-                %td="Ali Nawaz & Phil Barcelona"
-                %td
-                  %a{:href => "AliNawazPhilBarcelona.pdf"} Download
-              %tr
-                %td="Materials"
-                %td="Anish Guha"
-                %td
-                  %a{:href => "AnishGuha.pdf"} Download
-              %tr
-                %td="Energy"
-                %td="Brian Malone"
-                %td
-                  %a{:href => "BrianMalone.pdf"} Download
-              %tr
-                %td="Real Estate"
-                %td="Chris Pratt"
-                %td
-                  %a{:href => "ChrisPratt.pdf"} Download
-              %tr
-                %td="TMT"
-                %td="Cole Secor"
-                %td
-                  %a{:href => "ColeSecor.pdf"} Download
-              %tr
-                %td="Healthcare"
-                %td="Denis Visnjic"
-                %td
-                  %a{:href => "DenisVisnjic.pdf"} Download
-              %tr
-                %td="Energy"
-                %td="Jake Strzalkowski"
-                %td
-                  %a{:href => "JakeStrzalkowski.pdf"} Download
-              %tr
-                %td="Healthcare"
-                %td="Justin Chiu"
-                %td
-                  %a{:href => "JustinChiu.pdf"} Download
-              %tr
-                %td="Consumer Goods"
-                %td="Keshav Kakkar"
-                %td
-                  %a{:href => "KeshavKakkar.pdf"} Download
-              %tr
-                %td="Industrials"
-                %td="Majid Mowlood"
-                %td
-                  %a{:href => "MajidMowlood.pdf"} Download
-              %tr
-                %td="Consumer Goods"
-                %td="Matt Leung"
-                %td
-                  %a{:href => "MattLeung.pdf"} Download
-              %tr
-                %td="Energy"
-                %td="Matt Postorino"
-                %td
-                  %a{:href => "MattPostorino.pdf"} Download
-              %tr
-                %td="Materials"
-                %td="Santosh Morasa"
-                %td
-                  %a{:href => "SantoshMorasa.pdf"} Download
-              %tr
-                %td="TMT"
-                %td="Urja Lakhani"
-                %td
-                  %a{:href => "UrjaLakhani.pdf"} Download
+              - @presentations.each do |pres|
+                %tr
+                  %td="Sector"
+                  %td="#{pres[0]}"
+                  %td
+                    %a{:href => "#{pres[1]}"} Download
         .row
           %div
             %em="Disclaimer: All of the views expressed in these presentations reflect our members' personal views about the industry or company and its or their securities. The majority of our members are in their sophomore year whom have basic proficiency in industry analysis and valuation."
