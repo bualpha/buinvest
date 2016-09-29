@@ -63,13 +63,11 @@
           %table.table.table-striped
             %thead
               %tr
-                %th="Sector"
                 %th="Senior Analyst(s)"
                 %th="Presentation (.pdf)"
             %tbody
               - @presentations.each do |pres|
                 %tr
-                  %td="Sector"
                   %td="#{pres[0]}"
                   %td
                     %a{:href => "#{pres[1]}"} Download
