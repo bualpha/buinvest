@@ -33,6 +33,7 @@ end
 
 gem 'jquery-rails'
 gem 'aws-sdk-v1'
+gem 'rubocop'
 
 
 # To use ActiveModel has_secure_password
