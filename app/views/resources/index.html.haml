@@ -34,6 +34,8 @@
                     %a{:href => "#investment-resources", :id => "navbar-link"} Investment Research
                   %li
                     %a{:href => "#financial-analysis", :id => "navbar-link"} Financial Analysis
+                  %li
+                    %a{:href => "#quant-finance", :id => "navbar-link"} Quant Finance
     %hr
 
     %section#investment-management
@@ -86,3 +88,24 @@
           %span="We're working on adding resources to this section. Have a suggestion? Email us at "
           %span
             %a{:href => "mailto:buinvest@bu.edu"} buinvest@bu.edu
+
+
+    %section#quant-finance
+      .container
+        .row
+          %h3="Quant Finance"
+          %hr
+        .row
+          %div="Along with the workshops that are ran every Sunday at 3PM, below is a list of resources for people interested in Quant Finance."
+        .row
+          %table.table.table-striped
+            %thead
+              %tr
+                %th="Resource"
+                %th
+            %tbody
+              - @quant.each do |q|
+                %tr
+                  %td
+                    %a{:href => "#{q[1]}"} #{q[0]}
+                  %td
