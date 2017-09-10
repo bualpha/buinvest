@@ -1,23 +1,25 @@
 class ResourcesController < ApplicationController
   def index
+    @resources = {}
+    @presentations = {}
 
     if Rails.env.production?
       im_bucket = IM_S3_BUCKET.objects
 
-      @resources = {}
       im_bucket.each do |file|
         @resources["#{file.key}".gsub('.pdf', '')] = "#{file.public_url}"
       end
 
       ir_bucket = IR_S3_BUCKET.objects
 
-      @presentations = {}
       ir_bucket.each do |file|
         @presentations["#{file.key}".gsub('.pdf', '').gsub(/(?<=[a-z])(?=[A-Z])/, ' ')] = "#{file.public_url}"
       end
     end
 
-    @resources = {}
-    @presentations = {}
+    # XXX: Come up with some better interface to the quant-library resources
+    @quant = {}
+    @quant["BU Alpha quant-library"] = "https://github.com/bualpha/quant-library"
+    @quant["Quantopian Lecture Series"] = "https://www.quantopian.com/lectures"
   end
 end
