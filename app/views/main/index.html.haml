@@ -55,14 +55,23 @@
 
     .container
       .row.text-center
-        %h3="Upcoming Events"
+        %h3="Events & Meetings"
         %br
       .row.text-center.events
-        %div.col-md-12.event-wrapper
+        %div.col-md-6.event-wrapper
           %div.event-header="General Meetings"
-          %div.event-content="General Meetings take place every Wednesday night from 6 to 7PM in the Kenmore Classroom Building, Room 101."
+          %div.event-content="General Meetings take place every Wednesday night from 6PM to 7PM in KCB 101"
           %div.event-content
             %a{:href => "https://drive.google.com/open?id=10AY63dY7TwmZwOr5boGhJwR0nDMbEIzpFXWFWZMQV8o"}="JA Registration Link"
+        %div.col-md-6.event-wrapper
+          %div.event-header="Quant Finance Lecture Series"
+          %div.event-content="Lectures take place every Sunday from 2PM to 3:30PM in CAS 323A"
+          %div.event-content
+            %a{:href => "https://github.com/bualpha/fall-lectures"}="Fall Lectures"
+      .row.text-center.events
+        %div.col-md-6.event-wrapper
+          %div.event-header="SA Forums"
+          %div.event-content="SA Forums take place every Sunday from 12PM to approximately 2PM in CAS 204B"
 
     .container
       .row.text-center.highlights
