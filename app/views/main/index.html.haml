@@ -1,11 +1,12 @@
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %title= "BU Finance & Investment Club"
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
     = favicon_link_tag "favicon.ico"
+    %link{:rel => "stylesheet", :href => "https://cdn.plot.ly/plotly-latest.min.js" }
   %body
     %nav.navbar-default
       .container-fluid
@@ -39,15 +40,16 @@
                   %li
                     %a{:href => "/resources#quant-finance", :id => "navbar-link"} Quant Finance
 
-    .jumbotron
-      .header-container
-        %div.col-md-6.col-xs-12
-          %div.bufclogo
-        %div.col-md-6.col-xs-12.text-center
-          .row
-            .tagline= "Aim for Excellence. Expand your Horizons. Launch your Career."
-          .row
-            .provide="We provide a hands-on, practical learning platform for all BU students interested in accelerating their understanding of finance, by running a student-managed investment fund and research team."
+    #time-series-container
+      .jumbotron
+        .header-container
+          %div.col-md-6.col-xs-12
+            %div.bufclogo
+          %div.col-md-6.col-xs-12.text-center
+            .row
+              .tagline= "Aim for Excellence. Expand your Horizons. Launch your Career."
+            .row
+              .provide="We provide a hands-on, practical learning platform for all BU students interested in accelerating their understanding of finance, by running a student-managed investment fund and research team."
 
     .container
       .row.text-center.arrow
