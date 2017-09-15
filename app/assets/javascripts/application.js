@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require bufc-main
+//= require plotly-latest.min
 //= require_tree .
