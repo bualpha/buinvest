@@ -70,11 +70,30 @@
                 %th="Senior Analyst(s)"
                 %th="Presentation (.pdf)"
             %tbody
-              - @presentations.each do |pres|
+              - @fall_presentations.each do |fpres|
                 %tr
-                  %td="#{pres[0]}"
+                  %td="#{fpres[0]}"
                   %td
-                    %a{:href => "#{pres[1]}"} Download
+                    %a{:href => "#{fpres[1]}"} Download
+
+        .row
+          %div="Below is a list of company-focused stock pitches for each sector in Fall 2016."
+          %br
+          %h4
+            %b="Spring 2017"
+          %br
+          %table.table.table-striped
+            %thead
+              %tr
+                %th="Senior Analyst(s)"
+                %th="Presentation (.pdf)"
+            %tbody
+              - @spring_presentations.each do |spres|
+                %tr
+                  %td="#{spres[0]}"
+                  %td
+                    %a{:href => "#{spres[1]}"} Download
+
         .row
           %div
             %em="Disclaimer: All of the views expressed in these presentations reflect our members' personal views about the industry or company and its or their securities. The majority of our members are in their sophomore year whom have basic proficiency in industry analysis and valuation."

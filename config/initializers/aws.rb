@@ -3,5 +3,6 @@ AWS.config(
   :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
 )
 
-IM_S3_BUCKET =  AWS::S3.new.buckets[ENV['IM_S3_BUCKET']]
-IR_S3_BUCKET =  AWS::S3.new.buckets[ENV['IR_S3_BUCKET']]
+IM_BUCKET = AWS::S3.new.buckets[ENV['IM_BUCKET']]
+IR_FALL_BUCKET = AWS::S3.new.buckets[ENV['IR_FALL_BUCKET']]
+IR_SPRING_BUCKET = AWS::S3.new.buckets[ENV['IR_SPRING_BUCKET']]
