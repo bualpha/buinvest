@@ -169,7 +169,7 @@ DEPENDENCIES
   gibbon
   haml-rails (~> 0.4.0)
   jquery-rails
-  pg
+  pg (~> 1.0.0)
   rails!
   rubocop
   sass-rails (~> 3.2.3)

@@ -9,7 +9,7 @@ group :development do
   gem 'sqlite3'
 end
 
-gem 'pg'
+gem 'pg', '~> 1.0.0'
 gem 'activesupport', '~> 3.2.22.2'
 
 # Gems for styling
