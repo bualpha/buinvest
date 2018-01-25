@@ -11,6 +11,7 @@ end
 
 gem 'pg', '~> 1.0.0'
 gem 'activesupport', '~> 3.2.22.2'
+gem 'activerecord-postgresql-adapter'
 
 # Gems for styling
 gem 'sass-rails',   '~> 3.2.3'
