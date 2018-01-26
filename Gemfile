@@ -12,8 +12,6 @@ end
 group :production do
   gem 'pg', '~> 1.0.0'
   gem 'activesupport', '~> 3.2.22.2'
-  gem 'activerecord-postgresql-adapter'
-  gem 'postgres-pr'
 end
 
 # Gems for styling
